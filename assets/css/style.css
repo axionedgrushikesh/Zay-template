@@ -272,6 +272,10 @@ li {
   font-size: 20px;
 }
 
+.header-nav-links a {
+  color: #4A4A4A;
+}
+
 .header-nav-links li:last-child {
   margin-right: 0;
 }
@@ -322,3 +326,108 @@ li {
 /*=================================
   banner styling starts here
 =================================*/
+
+.banner-section {
+  background-color: #EFEFEF;
+  padding: 50px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.banner-section .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.previous-next-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-slider {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.banner-slider li {
+  display: none;
+}
+
+.banner-slider li:first-child {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.banner-slider h2 {
+  font-size: 50px;
+  color: #4A4A4A;
+  margin-bottom: 10px;
+}
+.banner-slider h3 {
+  font-size: 30px;
+  color: #313132;
+  margin-bottom: 5px;
+}
+
+.banner-slider p {
+  color: #4A4A4A;
+  line-height: 25px;
+  max-width: 35vw;
+}
+
+.text-black {
+  color: #1C2320;
+}
+
+.previous::before {
+  content: "\f104";
+  font-family: "FontAwesome";
+  color: #A4CBAC;
+  font-size: 50px;
+}
+
+.next::after {
+  content: "\f105";
+  font-family: "FontAwesome";
+  color: #A4CBAC;
+  font-size: 50px;
+}
+
+.previous {
+  background: none;
+  border: none;
+  position: absolute;
+  left: 0;
+}
+
+.next{
+  background: none;
+  border: none;
+  position: absolute;
+  right: 0;
+}
+
+.banner-navigation li {
+  background-color: #A5CEAF;
+  width: 30px;
+  height: 4px;
+  margin-right: 10px;
+}
+
+.banner-navigation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-text {
+  margin-right: 20px;
+}
+
+.banner-navigation > .active {
+  background-color: #59A96A;
+}
