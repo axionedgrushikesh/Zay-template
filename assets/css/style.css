@@ -248,6 +248,9 @@ li {
   margin-right: 10px;
 }
 
+/*=================================
+  Header-Top styling ends here
+=================================*/
 
 /*=================================
   Header-bottom styling starts here
@@ -322,6 +325,10 @@ li {
   font-size: 50px;
   font-weight: 600;
 }
+
+/*=================================
+  Header-bottom styling ends here
+=================================*/
 
 /*=================================
   banner styling starts here
@@ -431,3 +438,87 @@ li {
 .banner-navigation > .active {
   background-color: #59A96A;
 }
+
+/*=================================
+  banner styling ends here
+=================================*/
+
+/*=================================
+  categories styling starts here
+=================================*/
+
+.categories-section {
+  padding: 80px 0;
+}
+
+.categories-section .wrapper {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-bottom img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.category-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.category-bottom li {
+  text-align: center;
+}
+
+.category-top > h2 {
+  font-size: 50px;
+  color: #4A4A4A;
+  margin-bottom: 10px;
+}
+
+.category-top > p {
+  width: 40%;
+  color: #4A4A4A;
+  text-align: center;
+}
+
+.go-shop {
+  color: #fff;
+  padding: 14px 20px;
+  background-color: #5AAC6E;
+  border-radius: 4px;
+}
+
+.category-bottom figure {
+  margin-bottom: 30px;
+}
+
+.category-bottom figcaption {
+  font-size: 23px;
+  font-weight: 700;
+  color: #313132;
+}
+
+/*=================================
+  categories styling ends here
+=================================*/
+
+/*=================================
+  product styling starts here
+=================================*/
+
+
+
+/*=================================
+  product styling ends here
+=================================*/
