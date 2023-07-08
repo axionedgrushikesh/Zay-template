@@ -170,6 +170,10 @@ li {
   list-style-type: none;
 }
 
+.text-hide {
+  display: none;
+}
+
 /*for wrapper*/
 .wrapper {
   width: 86.50%;
@@ -490,6 +494,7 @@ li {
   width: 40%;
   color: #4A4A4A;
   text-align: center;
+  line-height: 25px;
 }
 
 .go-shop {
@@ -517,8 +522,95 @@ li {
   product styling starts here
 =================================*/
 
+.product-section {
+  background-color: #E9EEF4;
+  padding: 80px 0;
+}
 
+.product-section .wrapper {
 
+}
+
+.product-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.product-top h2 {
+  font-size: 50px;
+  color: #313132;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.product-top p {
+  width: 40%;
+  text-align: center;
+  line-height: 25px;
+}
+
+.product-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-bottom article {
+  margin-right: 10px;
+}
+
+.article-bottom {
+  background-color: #fff;
+  padding: 10px;
+  width: 330px;
+}
+
+.article-bottom p{
+  width: 90%;
+}
+
+.yellow-star::before {
+  content: "\f005";
+  font-family: "FontAwesome";
+  color: #EDEB59;
+}
+
+.gray-star::before {
+  content: "\f005";
+  font-family: "FontAwesome";
+  color: #BBBDBC;
+}
+
+.star-ratings {
+  display: flex;
+}
+
+.ratings-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-heading {
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.article-heading a {
+  color: #222834; 
+}
+
+.article-bottom p {
+  color: #313132;
+}
+
+.article-bottom .reviews {
+  display: block;
+  margin: 20px 0 40px;
+  color: #C0BEC9;
+}
+ 
 /*=================================
   product styling ends here
 =================================*/
