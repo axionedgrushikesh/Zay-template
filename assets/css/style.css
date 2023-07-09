@@ -265,7 +265,6 @@ a {
 
 li {
   list-style-type: none;
-  display: inline-block;
 }
 
 .text-hide {
@@ -275,7 +274,7 @@ li {
 /*for wrapper*/
 .wrapper {
   width: 86.50%;
-  max-width: 1175px;
+  max-width: 1290px;
   margin: 0 auto;
 }
 
@@ -285,8 +284,8 @@ li {
 
 .header-top {
   background-color: #222834;
-  padding: 14px 0;
-  font-size: 12px;
+  padding: 17px 0;
+  font-size: 13px;
 }
 
 .header-top .wrapper {
@@ -358,7 +357,7 @@ li {
 =================================*/
 
 .header-bottom {
-  padding: 20px 0;
+  padding: 22px 0;
 }
 
 .header-bottom .wrapper {
@@ -372,7 +371,7 @@ li {
 }
 
 .header-nav-links>li {
-  margin-right: 100px;
+  margin-right: 110px;
   font-size: 20px;
 }
 
@@ -423,7 +422,7 @@ li {
 
 .logo a {
   color: #57B26E;
-  font-size: 50px;
+  font-size: 58px;
   font-weight: 600;
 }
 
@@ -467,7 +466,7 @@ li {
 
 .banner-section {
   background-color: #EFEFEF;
-  padding: 50px 0;
+  padding: 100px 0;
   position: relative;
   display: flex;
   align-items: center;
@@ -486,7 +485,7 @@ li {
 
 .banner-slider {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 .banner-slider li {
@@ -514,12 +513,13 @@ li {
 
 .banner-slider p {
   color: #4A4A4A;
-  line-height: 25px;
+  line-height: 30px;
   max-width: 35vw;
+  font-size: 18px;
 }
 
 .text-black {
-  color: #1C2320;
+  color: black;
 }
 
 .previous::before {
@@ -580,11 +580,11 @@ li {
 =================================*/
 
 .categories-section {
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
 .categories-section .wrapper {
-  width: 75%;
+  width: 78%;
   display: flex;
   flex-direction: column;
 }
@@ -593,6 +593,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .category-bottom img {
@@ -619,10 +620,11 @@ li {
 }
 
 .category-top>p {
-  width: 40%;
+  width: 50%;
   color: #4A4A4A;
   text-align: center;
-  line-height: 25px;
+  line-height: 30px;
+  font-size: 18px;
 }
 
 .go-shop {
@@ -671,14 +673,22 @@ li {
 }
 
 .product-top p {
-  width: 40%;
+  width: 45%;
   text-align: center;
-  line-height: 25px;
+  line-height: 30px;
+  font-size: 18px;
 }
 
 .product-bottom {
   display: flex;
   justify-content: space-between;
+}
+
+.product-bottom img {
+  width: 91%;
+  height: 40vh;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .product-bottom article {
@@ -688,11 +698,16 @@ li {
 .article-bottom {
   background-color: #fff;
   padding: 20px 15px;
-  width: 320px;
+  width: 22.8vw;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .article-bottom p {
   width: 90%;
+  font-size: 18px;
+  color: #313132;
+  line-height: 25px;
 }
 
 .yellow-star::before {
@@ -717,7 +732,7 @@ li {
 }
 
 .article-heading {
-  font-size: 25px;
+  font-size: 30px;
   margin-top: 20px;
 }
 
@@ -725,14 +740,11 @@ li {
   color: #222834;
 }
 
-.article-bottom p {
-  color: #313132;
-}
-
 .article-bottom .reviews {
   display: block;
-  margin: 20px 0 40px;
+  margin: 40px 0 60px;
   color: #C0BEC9;
+  font-size: 20px;
 }
 
 /*=================================
@@ -762,7 +774,7 @@ li {
 }
 
 .zay-shop>h5 {
-  font-size: 25px;
+  font-size: 30px;
   border-bottom: 1px solid #3c3c3c;
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -773,6 +785,7 @@ li {
 }
 
 .address-info a {
+  font-size: 18px;
   color: #D8DAE2;
   display: block;
   margin-bottom: 20px;
@@ -795,7 +808,7 @@ li {
 }
 
 .products-list h5 {
-  font-size: 25px;
+  font-size: 30px;
   color: #D8DAE2;
   border-bottom: 1px solid #3c3c3c;
   padding-bottom: 20px;
@@ -803,6 +816,8 @@ li {
 }
 
 .products-list a {
+  font-size: 18px;
+  font-size: 18px;
   color: #D8DAE2;
   display: block;
   margin-bottom: 20px;
@@ -813,7 +828,7 @@ li {
 }
 
 .further-info h5 {
-  font-size: 25px;
+  font-size: 30px;
   color: #D8DAE2;
   border-bottom: 1px solid #3c3c3c;
   padding-bottom: 20px;
@@ -821,6 +836,7 @@ li {
 }
 
 .further-info a {
+  font-size: 18px;
   display: block;
   color: #D8DAE2;
   margin-bottom: 20px;
@@ -871,6 +887,7 @@ li {
 }
 
 .footer-bottom {
+  font-size: 18px;
   background-color: #1F232E;
   color: #D8DAE2;
   padding: 30px 0;
