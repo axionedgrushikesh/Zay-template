@@ -305,14 +305,12 @@ li {
 .mail-icon::before {
   content: "\f0e0";
   font-family: "FontAwesome";
-  color: #D8DAE2;
   margin-right: 10px;
 }
 
 .phone-icon::before {
   content: "\f879";
   font-family: "FontAwesome";
-  color: #fff;
   margin-right: 10px;
 }
 
@@ -323,28 +321,24 @@ li {
 .facebook::before {
   content: "\f39e";
   font-family: "FontAwesome";
-  color: #fff;
   margin-right: 10px;
 }
 
 .instagram::before {
   content: "\f16d";
   font-family: "FontAwesome";
-  color: #fff;
   margin-right: 10px;
 }
 
 .twitter::before {
   content: "\f099";
   font-family: "FontAwesome";
-  color: #fff;
   margin-right: 10px;
 }
 
 .linked-in::before {
   content: "\f08c";
   font-family: "FontAwesome";
-  color: #fff;
   margin-right: 10px;
 }
 
@@ -355,6 +349,9 @@ li {
 /*=================================
   Header-bottom styling starts here
 =================================*/
+.hamberger-icon {
+  display: none;
+}
 
 .header-bottom {
   padding: 22px 0;
@@ -431,7 +428,7 @@ li {
 }
 
 .cart-value {
-  position: absolute;  
+  position: absolute;
   bottom: 15px;
   right: 27px;
   background-color: #D8DAE2;
@@ -555,6 +552,7 @@ li {
   width: 30px;
   height: 4px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .banner-navigation {
@@ -684,21 +682,27 @@ li {
   justify-content: space-between;
 }
 
+.articles {
+  flex-basis: 100%;
+}
+
 .product-bottom img {
-  width: 91%;
-  height: 40vh;
+  width: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
 .product-bottom article {
-  margin-right: 10px;
+  margin-right: 40px;
+}
+
+.product-bottom article:last-child {
+  margin-right: 0;
 }
 
 .article-bottom {
   background-color: #fff;
   padding: 20px 15px;
-  width: 22.8vw;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -714,12 +718,17 @@ li {
   content: "\f005";
   font-family: "FontAwesome";
   color: #EDEB59;
+  cursor: pointer;
+  margin-right: 3px;
 }
 
 .gray-star::before {
   content: "\f005";
   font-family: "FontAwesome";
   color: #BBBDBC;
+  cursor: pointer;
+  margin-right: 3px;
+
 }
 
 .star-ratings {
@@ -901,3 +910,488 @@ li {
 /*=================================
   footer styling ends here
 =================================*/
+
+
+/*===================================
+  media query for 995px hover effects starts here
+=====================================*/
+
+@media only screen and (min-width: 995px) {
+
+  /* header hover effects */
+
+  .icon:hover {
+    color: #57B076;
+  }
+
+  .header-nav-links a:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #57B076;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .header-nav-links a:hover:after {
+    transform: scaleX(1);
+  }
+
+  .header-nav-links a:hover {
+    color: #57B076;
+  }
+
+  .search-icon:hover::before {
+    color: #57B076;
+  }
+
+  .cart-icon:hover::before {
+    color: #57B076;
+  }
+
+  .profile-icon:hover::before {
+    color: #57B076;
+  }
+
+  .previous {
+    transition: 0.3s ease-in-out;
+  }
+
+  .previous:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+  }
+
+  .next {
+    transition: 0.3s ease-in-out;
+  }
+
+  .next:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+  }
+
+  .category-bottom img {
+    transition: 0.3s ease-in-out;
+  }
+
+  .category-bottom img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+  }
+
+  .go-shop:hover {
+    background-color: black;
+    color: #57B076;
+  }
+
+  .reviews:hover {
+    color: #57B076;
+  }
+
+  .location-icon:hover::before {
+    color: #57B076;
+  }
+
+  .address-info a:hover {
+    color: #57B076;
+  }
+
+  .products-list a:hover {
+    color: #57B076;
+  }
+
+  .further-info a:hover {
+    color: #57B076;
+  }
+
+  .underline:hover {
+    color: #57B076;
+  }
+
+  .newsletter button:hover {
+    background-color: #FFF;
+    color: #57B076;
+  }
+}
+
+/*===================================
+  media query for 995px hover effects ends here
+=====================================*/
+
+/*===================================
+  media query for 1003px starts here
+=====================================*/
+
+@media only screen and (max-width: 1003px) {
+  .header-nav-links>li {
+    margin-right: 50px;
+  }
+
+  .header-nav-links {
+    display: none;
+  }
+
+  .hamberger-icon {
+    display: block;
+  }
+
+  .hamberger-icon::before {
+    content: "\f0c9";
+    font-family: "FontAwesome";
+    color: #1C2320;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+
+  .banner-slider h2 {
+    font-size: 40px;
+  }
+
+  .banner-slider h3 {
+    font-size: 27px;
+  }
+
+  .banner-slider p {
+    font-size: 16px;
+  }
+
+  .category-top>h2 {
+    font-size: 40px;
+  }
+
+  .category-top>p {
+    font-size: 16px;
+  }
+
+  .category-bottom img {
+    width: 80%;
+  }
+
+  .product-top h2 {
+    font-size: 40px;
+  }
+
+  .product-top p {
+    font-size: 16px;
+  }
+
+  .article-heading {
+    font-size: 25px;
+  }
+
+  .article-bottom p {
+    font-size: 16px;
+  }
+
+  .article-bottom .reviews {
+    font-size: 18px;
+  }
+
+  .zay-shop>h5 {
+    font-size: 25px;
+  }
+
+  .products-list h5 {
+    font-size: 25px;
+  }
+
+  .further-info h5 {
+    font-size: 25px;
+  }
+
+  .address-info a {
+    font-size: 16px;
+  }
+
+  .products-list a {
+    font-size: 16px;
+  }
+
+  .further-info a {
+    font-size: 16px;
+  }
+
+  .footer-bottom {
+    font-size: 16px;
+  }
+
+  .newsletter button {
+    padding: 3px 13px;
+    font-size: 13px;
+  }
+
+  .newsletter input {
+    padding: 16px;
+    width: 12vw;
+    font-size: 14px;
+  }
+
+  .medea-icon-circle {
+    padding: 12px;
+    border: 1px solid #4A4A4A;
+    border-radius: 50%;
+    font-size: 14px;
+  }
+}
+
+/*===================================
+  media query for 1003px ends here
+=====================================*/
+
+
+/*===================================
+  media query for 768px starts here
+=====================================*/
+
+@media only screen and (max-width: 768px) {
+
+  .header-top {
+    font-size: 9px;
+  }
+
+  .logo a {
+    font-size: 50px;
+  }
+
+  .main-header-icons {
+    font-size: 10px;
+  }
+
+  .active img {
+    width: 80%;
+  }
+
+  .banner-slider li:first-child {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+
+  .banner-slider p {
+    font-size: 14px;
+    max-width: 60vw;
+  }
+
+  .category-top>h2 {
+    text-align: center;
+  }
+
+  .category-top>p {
+    font-size: 14px;
+  }
+
+  .category-bottom {
+    flex-direction: column;
+  }
+  
+  .category-bottom li {
+    margin-bottom: 40px; 
+  }
+
+  .category-bottom li:last-child {
+    margin-bottom: 0; 
+  }
+
+  .product-top p {
+    font-size: 14px;
+  }
+
+  .product-bottom {
+    flex-direction: column;
+  }
+
+  .product-bottom article {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .zay-shop {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .products-list {
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .zay-shop>h5 {
+    text-align: center;
+  }
+
+  .products-list a {
+    font-size: 12px;
+  }
+
+  .address-info a {
+    font-size: 12px;
+  }
+
+  .further-info a {
+    font-size: 12px;
+  }
+
+  .further-info {
+    text-align: center;
+  }
+
+  .footer-mid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sub-header-media li:last-child {
+    margin-right: 0;
+  }
+
+  .sub-header-media {
+    margin-bottom: 30px;
+  }
+
+  .newsletter input {
+    width: 30vw;
+  }
+
+  .newsletter button {
+    padding: 15px 20px;
+  }
+
+  .footer-bottom p{
+    text-align: center;
+  }
+
+  .medea-icon-circle {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+  }
+
+  .search-icon::before {
+    font-size: 16px;
+  }
+
+  .cart-icon::before {
+    font-size: 16px;
+  }
+
+  .profile-icon::before {
+    font-size: 16px;
+  }
+
+  .hamberger-icon::before {
+    font-size: 16px;
+  }
+}
+
+/*===================================
+  media query for 768px ends here
+=====================================*/
+
+
+/*===================================
+  media query for 480px starts here
+=====================================*/
+
+@media only screen and (max-width: 480px) {
+  .logo a {
+    font-size: 48px;
+  }
+
+  .banner-slider h2 {
+    font-size: 30px;
+  }
+
+  .banner-slider h3 {
+    font-size: 18px;
+  }
+
+  .banner-slider p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .active img {
+    width: 60%;
+  }
+
+  .category-top>h2 {
+    font-size: 30px;
+  }
+
+  .category-top>p {
+    width: 100%;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .category-top {
+    margin-bottom: 50px;
+  }
+
+  .categories-section {
+    padding: 50px 0;
+  }
+
+  .product-top h2 {
+    font-size: 30px;
+  }
+
+  .product-top p {
+    width: 100%;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .product-top {
+    margin-bottom: 30px;
+  }
+
+  .article-heading {
+    font-size: 20px;
+  }
+
+  .article-bottom p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .article-bottom .reviews {
+    font-size: 16px;
+  }
+
+  .medea-icon-circle {
+    font-size: 10px;
+  }
+
+  .newsletter input {
+    width: 40vw;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+
+/*===================================
+  media query for 480px ends here
+=====================================*/
