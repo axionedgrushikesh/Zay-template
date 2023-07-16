@@ -61,22 +61,22 @@
               </li>
               <li>
                 <a href="#FIXME" title="linked-in" class="icon linked-in" target="_blank"
-                  rel="noopener noreferrer">Linked-in</a>
+                  rel="noopener noreferrer">Linkedin</a>
               </li>
             </ul>
           </div>
         </div>
-        <!--sub header ends here-->
+        <!--top header ends here-->
         <!--bottom header starts here-->
         <div class="header-bottom">
           <div class="wrapper">
             <h1 class="logo">
-              <a href="#FIXME" title="Zay">Zay</a>
+              <a href="/index.html" title="Zay">Zay</a>
             </h1>
             <nav class="header-nav">
               <ul class="header-nav-links">
                 <li class="active">
-                  <a href="#FIXME" title="/index.html">Home</a>
+                  <a href="/index.html" title="/index.html">Home</a>
                 </li>
                 <li>
                   <a href="#FIXME" title="About">About</a>
@@ -91,22 +91,27 @@
             </nav>
             <ul class="main-header-icons">
               <li>
-                <button class="search-icon"></button>
+                <button class="icon search-icon">search</button>
                 <form class="search-form">
-                  <input type="text" placeholder="Search">
+                  <input type="text" name="search" placeholder="Search">
                 </form>
               </li>
-              <li>
-                <a href="#FIXME" title="cart" class="cart-icon">Cart</a>
+              <li class="cart">
+                <a href="#FIXME" title="cart" class="icon cart-icon">Cart</a>
+                <div class="cart-value">7</div>
               </li>
-              <li>
-                <a href="#FIXME" title="profile" class="profile-icon">profile</a>
+              <li class="profile">
+                <a href="#FIXME" title="profile" class="icon profile-icon">profile</a>
+                <div class="profile-value">+99</div>
+              </li>
+              <li class="icon hamberger-icon">
+                hamberger
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <!--main header ends here-->
+      <!--bottom header ends here-->
     </header>
     <!--header ends here-->
 
@@ -115,17 +120,23 @@
       <!-- banner section starts here -->
       <section class="banner-section">
         <div class="wrapper">
+          <div class="previous-next-btn">
+            <button class="icon previous">Previous</button>
+            <button class="icon next">Next</button>
+          </div>
           <ul class="banner-slider">
             <li class="active">
-              <h2>proident occaecat</h2>
-              <h3>Aliquip ex ea commodo consequat</h3>
-              <p>
-                You are permitted to use this Zay CSS template for your
-                commercial websites. You are not permitted to re-distribute
-                the template ZIP file in any kind of template collection websites.
-              </p>
+              <div class="banner-text">
+                <h2>Proident occaecat</h2>
+                <h3>Aliquip ex ea commodo consequat</h3>
+                <p>
+                  You are permitted to use this Zay CSS template for your
+                  commercial websites. You are <span class="text-black">not permitted</span> to re-distribute
+                  the template ZIP file in any kind of template collection websites.
+                </p>
+              </div>
               <figure class="banner-img">
-                <img src="https://dummyimage.com/333x439/000000/fff" alt="bottle">
+                <img src="https://dummyimage.com/300x419/000000/fff" alt="bottle">
               </figure>
             </li>
             <li>
@@ -153,10 +164,6 @@
               </figure>
             </li>
           </ul>
-          <div class="previous-next-btn">
-            <button class="previous">Previous</button>
-            <button class="next">Next</button>
-          </div>
           <ul class="banner-navigation">
             <li></li>
             <li class="active"></li>
@@ -169,8 +176,8 @@
       <!-- categories section starts here -->
       <section class="categories-section">
         <div class="wrapper">
-          <div class="category-top">
-            <h2>Categories of The Month</h2>
+          <div class="categories-top">
+            <h3>Categories of The Month</h3>
             <p>
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia deserunt mollit anim id est laborum
@@ -180,7 +187,7 @@
             <li>
               <figure>
                 <a href="#FIXME" title="Watches">
-                  <img src="https://dummyimage.com/271x293/000000/fff" alt="Watches">
+                  <img src="https://dummyimage.com/271x271/000000/fff" alt="Watches">
                 </a>
                 <figcaption>Watches</figcaption>
               </figure>
@@ -189,7 +196,7 @@
             <li>
               <figure>
                 <a href="#FIXME" title="Shoes">
-                  <img src="https://dummyimage.com/271x293/000000/fff" alt="Shoes">
+                  <img src="https://dummyimage.com/271x271/000000/fff" alt="Shoes">
                 </a>
                 <figcaption>Shoes</figcaption>
               </figure>
@@ -198,7 +205,7 @@
             <li>
               <figure>
                 <a href="#FIXME" title="Accessories">
-                  <img src="https://dummyimage.com/271x293/000000/fff" alt="Glasses">
+                  <img src="https://dummyimage.com/271x271/000000/fff" alt="Glasses">
                 </a>
                 <figcaption>Accessories</figcaption>
               </figure>
@@ -213,41 +220,41 @@
       <section class="product-section">
         <div class="wrapper">
           <div class="product-top">
-            <h2>Featured Product</h2>
+            <h3>Featured Product</h3>
             <p>
               Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
               pariatur. Excepteur sint occaecat cupidatat non proident.
             </p>
           </div>
           <div class="product-bottom">
-            <article>
-              <figure>
+            <article class="articles">
+              <figure class="fig-product-image">
                 <a href="#FIXME" title="Gym Weight">
-                  <img src="https://dummyimage.com/250x263/000000/fff" alt="Torch">
+                  <img src="https://dummyimage.com/350x250/403d40/000103" alt="Torch">
                 </a>
               </figure>
               <div class="article-bottom">
                 <div class="ratings-price">
                   <ul class="star-ratings">
-                    <li class="yellow-star">
+                    <li class="icon yellow-star">
                       star ratings
                     </li>
-                    <li class="yellow-star">
+                    <li class="icon yellow-star">
                       star ratings
                     </li>
-                    <li class="yellow-star">
+                    <li class="icon yellow-star">
                       star ratings
                     </li>
-                    <li class="gray-star">
+                    <li class="icon gray-star">
                       star ratings
                     </li>
-                    <li class="gray-star">
+                    <li class="icon gray-star">
                       star ratings
                     </li>
                   </ul>
                   <span class="price">$240.00</span>
                 </div>
-                <h3>
+                <h3 class="article-heading">
                   <a href="#FIXME" title="Gym Weight">Gym Weight</a>
                 </h3>
                 <p>
@@ -255,38 +262,38 @@
                   consectetur adipisicing elit. Sunt in
                   culpa qui officia deserunt.
                 </p>
-                <a href="#FIXME" title="Reviews">Reviews (24)</a>
+                <a href="#FIXME" title="Reviews" class="reviews">Reviews (24)</a>
               </div>
             </article>
 
-            <article>
+            <article class="articles">
               <figure>
                 <a href="#FIXME" title="Cloud Nike Shoes">
-                  <img src="https://dummyimage.com/250x263/000000/fff" alt="Watch">
+                  <img src="https://dummyimage.com/350x250/403d40/000103" alt="Watch">
                 </a>
               </figure>
               <div class="article-bottom">
                 <div class="ratings-price">
                   <ul class="star-ratings">
-                    <li class="yellow-star">
+                    <li class="icon yellow-star">
                       star ratings
                     </li>
-                    <li class="yellow-star">
+                    <li class="icon yellow-star">
                       star ratings
                     </li>
-                    <li class="yellow-star">
+                    <li class="icon yellow-star">
                       star ratings
                     </li>
-                    <li class="gray-star">
+                    <li class="icon gray-star">
                       star ratings
                     </li>
-                    <li class="gray-star">
+                    <li class="icon gray-star">
                       star ratings
                     </li>
                   </ul>
                   <span class="price">$480.00</span>
                 </div>
-                <h3>
+                <h3 class="article-heading">
                   <a href="#FIXME" title="Gym Weight">Cloud Nike Shoes</a>
                 </h3>
                 <p>
@@ -294,38 +301,38 @@
                   Nullam ipsum diam, posuere vitae
                   pharetra sed, commodo ullamcorper.
                 </p>
-                <h4><a href="#FIXME" title="Reviews">Reviews (48)</a></h4>
+                <h4><a href="#FIXME" title="Reviews" class="reviews">Reviews (48)</a></h4>
               </div>
             </article>
 
-            <article>
+            <article class="articles">
               <figure>
                 <a href="#FIXME" title="Summer Addides Shoes">
-                  <img src="https://dummyimage.com/250x263/000000/fff" alt="camera">
+                  <img src="https://dummyimage.com/350x250/403d40/000103" alt="camera">
                 </a>
               </figure>
               <div class="article-bottom">
                 <div class="ratings-price">
                   <ul class="star-ratings">
-                    <li class="yellow-star">
+                    <li class="icon yellow-star">
                       star ratings
                     </li>
-                    <li class="yellow-star">
+                    <li class="icon yellow-star">
                       star ratings
                     </li>
-                    <li class="yellow-star">
+                    <li class="icon yellow-star">
                       star ratings
                     </li>
-                    <li class="yellow-star">
+                    <li class="icon yellow-star">
                       star ratings
                     </li>
-                    <li class="yellow-star">
+                    <li class="icon yellow-star">
                       star ratings
                     </li>
                   </ul>
                   <span class="price">$360.00</span>
                 </div>
-                <h3>
+                <h3 class="article-heading">
                   <a href="#FIXME" title="Gym Weight">Summer Addides Shoes</a>
                 </h3>
                 <p>
@@ -333,7 +340,7 @@
                   Phasellus pulvinar sagittis diam,
                   et scelerisque ipsum lobortis nec.
                 </p>
-                <h4><a href="#FIXME" title="Reviews">Reviews (74)</a></h4>
+                <h4><a href="#FIXME" title="Reviews" class="reviews">Reviews (74)</a></h4>
               </div>
             </article>
           </div>
@@ -350,9 +357,9 @@
           <div class="wrapper">
             <div class="flex">
               <div class="zay-shop">
-                <h5>
-                  <a href="#FIXME">Zay Shop</a>
-                </h5>
+                <h4>
+                  <a href="/index.html" title="zay shop">Zay Shop</a>
+                </h4>
                 <ul class="address-info">
                   <li>
                     <address>
@@ -365,7 +372,7 @@
                     <a href="tel:0100200340" title="010-020-0340" target="_blank" class="phone-icon">010-020-0340</a>
                   </li>
                   <li>
-                    <a href="mailto:info@company.com" title="email" target="_blank"
+                    <a href="mailto:info@company.com" title="info@company.com" target="_blank"
                       class="mail-icon">info@company.com</a>
                   </li>
                 </ul>
@@ -397,7 +404,7 @@
                 </ul>
               </div>
               <div class="further-info">
-                <h3>Further Info</h3>
+                <h5>Further Info</h5>
                 <ul>
                   <li>
                     <a href="#FIXME" title="Home" target="_self">Home</a>
@@ -420,19 +427,19 @@
 
             <div class="footer-mid">
               <ul class="sub-header-media">
-                <li>
+                <li class="medea-icon-circle">
                   <a href="#FIXME" title="facebook" class="icon facebook" target="_blank"
                     rel="noopener noreferrer">Facebook</a>
                 </li>
-                <li>
+                <li class="medea-icon-circle">
                   <a href="#FIXME" title="instagram" class="icon instagram" target="_blank"
                     rel="noopener noreferrer">Instagram</a>
                 </li>
-                <li>
+                <li class="medea-icon-circle">
                   <a href="#FIXME" title="twitter" class="icon twitter" target="_blank"
                     rel="noopener noreferrer">Twitter</a>
                 </li>
-                <li>
+                <li class="medea-icon-circle">
                   <a href="#FIXME" title="linked-in" class="icon linked-in" target="_blank"
                     rel="noopener noreferrer">Linked-in</a>
                 </li>
@@ -441,7 +448,7 @@
                 <div class="input-group">
                   <input type="email" placeholder="Email address">
                 </div>
-                <button type="submit">Subscribe</button>
+                <input type="submit" value="Subscribe" />
               </form>
             </div>
           </div>
@@ -449,8 +456,10 @@
 
         <div class="footer-bottom">
           <div class="wrapper">
-            <p>Copyright &copy; 2021 Company Name | Designed by <a href="#FIXME" title="TemplateMo"
-                class="underline">TemplateMo</a></p>
+            <p>
+              Copyright &copy; 2021 Company Name | Designed by
+              <a href="#FIXME" title="TemplateMo" class="underline">TemplateMo</a>
+            </p>
           </div>
         </div>
       </div>
