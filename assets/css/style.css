@@ -467,7 +467,7 @@ li {
   position: absolute;
   bottom: 5px;
   background-color: #EAEDF5;
-  border-radius: 43%;
+  border-radius: 34px;
   width: 37px;
   padding: 3px;
   text-align: center;
@@ -1029,10 +1029,10 @@ li {
 =====================================*/
 
 /*===================================
-  media query for 1003px starts here
+  media query for 995px starts here
 =====================================*/
 
-@media only screen and (max-width: 1003px) {
+@media only screen and (max-width: 995px) {
 
   .header-nav-links {
     display: none;
@@ -1040,13 +1040,12 @@ li {
 
   .hamberger-icon {
     display: block;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   .hamberger-icon::before {
     content: "\f0c9";
     color: #1C2320;
-    margin-right: 10px;
     font-size: 20px;
   }
 
@@ -1123,10 +1122,18 @@ li {
     border-radius: 50%;
     font-size: 14px;
   }
+
+  .banner-section {
+    padding: 70px 0;
+  }
+
+  .categories-section h3 { font-size: 40px; }
+
+  .categories-section p { font-size: 14px; }
 }
 
 /*===================================
-  media query for 1003px ends here
+  media query for 995px ends here
 =====================================*/
 
 
@@ -1168,7 +1175,7 @@ li {
   }
 
   .banner-slider p {
-    font-size: 14px;
+    font-size: 12px;
     max-width: 60vw;
   }
 
@@ -1307,7 +1314,7 @@ li {
   }
 
   .banner-section {
-    padding: 60px 0;
+    padding: 40px 0;
   }
 
   .banner-slider {
@@ -1323,7 +1330,7 @@ li {
   }
 
   .product-section {
-    padding: 60px 0;
+    padding: 40px 0;
   }
 
   .product-bottom article:last-child {
@@ -1332,6 +1339,44 @@ li {
 
   .footer-top {
     padding: 40px 0;
+  }
+
+  .main-header-icons li:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .banner-slider h2 {
+    font-size: 30px;
+  }
+
+  .banner-slider h3 {
+    font-size: 23px;
+  }
+
+  .categories-section h3 { font-size: 30px; }
+  .categories-section p { 
+    font-size: 12px;
+    line-height: 20px;
+   }
+
+  .categories-section {
+    padding: 40px 0;
+  }
+
+  .product-section h3 {
+    font-size: 30px;
+  }
+
+  .product-section p {
+    font-size: 12px;
+  }
+
+  .product-section a {
+    font-size: 25px;
+  }
+
+  .product-section p {
+    line-height: 20px;
   }
 }
 
@@ -1452,6 +1497,24 @@ li {
 
   .category-bottom img {
     width: 55%;
+  }
+
+  .categories-section h3 {
+    font-size: 25px;
+  }
+
+  .product-section h3 {
+    font-size: 25px;
+  }
+
+  .product-section p {
+    line-height: 20px;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .product-section a {
+    font-size: 18px;
   }
 }
 
